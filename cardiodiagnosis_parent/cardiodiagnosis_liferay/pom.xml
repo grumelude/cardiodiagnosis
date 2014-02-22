@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>cardiodiagnosis_parent</artifactId>
+		<groupId>com.cardiodiagnosis</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<groupId>com.cardiodiagnosis</groupId>
+	<artifactId>cardiodiagnosis_liferay</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>cardiodiagnosis_liferay</name>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>liferay-plugin-repo</id>
+			<name>Liferay Repo</name>
+			<url>https://repository.liferay.com/nexus/content/groups/liferay-ce/</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+	<repositories>
+		<repository>
+			<id>liferay-repo</id>
+			<name>Liferay Repo</name>
+			<url>https://repository.liferay.com/nexus/content/groups/liferay-ce/</url>
+		</repository>
+	</repositories>
+
+	<modules>
+		<module>cardiodiagnosis_themes</module>
+   		<module>cardiodiagnosis_layouts</module>
+  </modules>
+	<properties>
+		<liferay.auto.deploy.dir>${liferay.server}/deploy</liferay.auto.deploy.dir>
+	</properties>
+</project>

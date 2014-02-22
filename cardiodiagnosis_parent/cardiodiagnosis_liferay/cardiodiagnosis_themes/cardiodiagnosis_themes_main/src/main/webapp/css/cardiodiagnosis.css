@@ -1,0 +1,39 @@
+/*** body ****/
+
+.aui body {
+	background-image: url(@theme_image_path@/cardiodiagnosis/hearth-white.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/**** navigation ****/
+#navigation {
+	margin-top: 47px;
+	font-size: 20px;
+} 
+
+
+/*** logo ****/
+.logo {
+	background-image: url(@theme_image_path@/cardiodiagnosis/logo-negro.png);
+	background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: inline-block;
+	height: 125px;
+	width: 401px;
+}
+
+.dark .logo {
+	background-image:
+		url(@theme_image_path@/cardiodiagnosis/logo-blanco.png);
+}
+
+/*** home ****/
+.aui .carousel-home .portlet-borderless-container {
+	background: none;
+}
+
+.aui .carousel-home .portlet-borderless-container menu {
+	display: none;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cardiodiagnosis</groupId>
+	<artifactId>cardiodiagnosis_parent</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>cardiodiagnosis_parent</name>
+	<modules>
+		<module>cardiodiagnosis_liferay</module>
+	</modules>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>liferay-plugin-repo</id>
+			<name>Liferay CE</name>
+			<url>https://repository.liferay.com/nexus/content/groups/liferay-ce/</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>http://central.maven.org/maven2</url>
+		</repository>
+		<repository>
+			<id>liferay-repo</id>
+			<name>Liferay CE</name>
+			<url>https://repository.liferay.com/nexus/content/groups/liferay-ce/</url>
+		</repository>
+	</repositories>
+	<properties>
+		<liferay.server>${user.home}/liferay/cardiodiagnosis/liferay-portal-6.2.0-ce-ga1</liferay.server>
+		<liferay.version>6.2.0</liferay.version>
+		<liferay.maven.plugin.version>6.2.0-RC5</liferay.maven.plugin.version>
+	</properties>
+</project>
