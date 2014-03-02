@@ -651,10 +651,10 @@
     .aui .dark #navigation .navbar-inner .nav li, .aui .light #navigation .navbar-inner .nav li {
       padding: 8px 0; }
       .aui .dark #navigation .navbar-inner .nav li.active > a, .aui .dark #navigation .navbar-inner .nav li.open > a, .aui .light #navigation .navbar-inner .nav li.active > a, .aui .light #navigation .navbar-inner .nav li.open > a {
-        background: #00CAFF;
+        background: #53585F;
         color: #FFF; }
       .aui .dark #navigation .navbar-inner .nav li.open > .dropdown-toggle, .aui .light #navigation .navbar-inner .nav li.open > .dropdown-toggle {
-        background: #00CAFF;
+        background: #53585F;
         color: #FFF; }
     .aui .dark #navigation .navbar-inner .nav .dropdown-menu, .aui .light #navigation .navbar-inner .nav .dropdown-menu {
       background-color: #FFF;
@@ -671,7 +671,7 @@
       .aui .dark #navigation .navbar-inner .nav .dropdown-menu a, .aui .light #navigation .navbar-inner .nav .dropdown-menu a {
         color: #555; }
         .aui .dark #navigation .navbar-inner .nav .dropdown-menu a:focus, .aui .dark #navigation .navbar-inner .nav .dropdown-menu a:hover, .aui .light #navigation .navbar-inner .nav .dropdown-menu a:focus, .aui .light #navigation .navbar-inner .nav .dropdown-menu a:hover {
-          background: #00CAFF;
+          background: #53585F;
           color: #FFF;
           text-decoration: none; }
   .aui .dark .modify-pages .delete-tab, .aui .light .modify-pages .delete-tab {
@@ -692,10 +692,10 @@
   .aui .dark section.portlet, .aui .light section.portlet {
     border: 2px solid transparent; }
     .aui .dark section.portlet menu.portlet-topper-toolbar, .aui .light section.portlet menu.portlet-topper-toolbar {
-      color: #00CAFF;
+      color: #53585F;
       display: none; }
   .aui .dark.signed-in section.portlet:hover, .aui .light.signed-in section.portlet:hover {
-    border-color: #00CAFF; }
+    border-color: #53585F; }
     .aui .dark.signed-in section.portlet:hover menu.portlet-topper-toolbar, .aui .light.signed-in section.portlet:hover menu.portlet-topper-toolbar {
       display: block; }
   .aui .dark section.portlet#portlet_new-password menu.portlet-topper-toolbar, .aui .light section.portlet#portlet_new-password menu.portlet-topper-toolbar {
@@ -811,7 +811,7 @@
   .aui .dark .portlet {
     background: #363636; }
   .aui .dark .portlet-title {
-    color: #00CAFF; }
+    color: #53585F; }
   .aui .dark .table {
     color: #555; }
 

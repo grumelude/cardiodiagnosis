@@ -23,19 +23,17 @@ $theme.include($body_top_include)
 <div class="container-fluid" id="wrapper">
 	<header id="banner" role="banner">
 		<div id="heading" class="row-fluid">
-			<div class="span4">			
+			<div class="pull-left">			
 				<h1 class="site-title ">
 					<a class="logo" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">											
 					</a>
 				</h1>
 			</div>
-			<div class="span8">
+			<div class="pull-right">
 				#if ($has_navigation || $is_signed_in)
 					#parse ("$full_templates_path/navigation.vm")
 				#end			
-			</div>
-
-			
+			</div>			
 		</div>
 
 		

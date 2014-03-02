@@ -11,11 +11,11 @@
 		</div>
 
 		<div class="portlet-column portlet-column-last span4" id="column-3">
-			$processor.processColumn("column-3", "portlet-column-content portlet-column-content-last")
+			$processor.processColumn("column-3", "portlet-column-content portlet-column-content")
 		</div>
 		
-		<div class="portlet-column portlet-column-last span5" id="column-4">
-			$processor.processColumn("column-3", "portlet-column-content portlet-column-content-last")
+		<div class="portlet-column portlet-column-last span4" id="column-4">
+			$processor.processColumn("column-4", "portlet-column-content portlet-column-content-last")
 		</div>
 	</div>
 
