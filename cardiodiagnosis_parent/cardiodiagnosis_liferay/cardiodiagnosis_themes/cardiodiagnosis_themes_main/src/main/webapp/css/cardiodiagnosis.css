@@ -1,4 +1,14 @@
 /*** body ****/
+.aui body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.aui a {
+	font-family: 'Raleway', sans-serif;
+	font-weight: inherit;
+	color: #53585F;
+}
+
 
 /**** navigation ****/
 #navigation {
