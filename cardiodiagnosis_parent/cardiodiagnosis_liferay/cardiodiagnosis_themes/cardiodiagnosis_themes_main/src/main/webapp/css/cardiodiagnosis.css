@@ -9,6 +9,10 @@
 	color: #53585F;
 }
 
+.controls-hidden .portlet-title, .signed-out .portlet-title {
+	display: none;
+}
+
 
 /**** navigation ****/
 #navigation {
@@ -20,11 +24,11 @@
 .logo {
 	background-image: url(@theme_image_path@/cardiodiagnosis/logo.png);
 	background-repeat: no-repeat;
-	background-size: 212px 71px;
-	display: inline-block;
-	height: 72px;
-	position: static;
-	width: 198px;
+    background-size: 212px auto;
+    display: inline-block;
+    height: 97px;
+    position: static;
+    width: 198px;
 }
 
 .dark .logo {
