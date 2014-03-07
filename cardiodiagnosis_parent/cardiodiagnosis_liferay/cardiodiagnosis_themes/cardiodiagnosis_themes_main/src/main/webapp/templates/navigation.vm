@@ -1,4 +1,4 @@
-<nav class="navbar site-navigation pull-right" id="navigation" role="navigation">
+<nav class="navbar site-navigation span12 pull-right" id="navigation" role="navigation">
 	<div class="navbar-inner">
 		<div class="collapse nav-collapse">
 			<ul aria-label="#language ("site-pages")" class="nav nav-collapse" role="menubar">

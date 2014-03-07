@@ -1,32 +1,38 @@
 /*** body ****/
-
 .aui body {
-	background-image: url(@theme_image_path@/cardiodiagnosis/hearth-white.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+	font-family: 'Raleway', sans-serif;
 }
+
+.aui a {
+	font-family: 'Raleway', sans-serif;
+	font-weight: inherit;
+	color: #53585F;
+}
+
+.controls-hidden .portlet-title, .signed-out .portlet-title {
+	display: none;
+}
+
 
 /**** navigation ****/
 #navigation {
-	margin-top: 47px;
-	font-size: 20px;
-} 
-
+	margin-top: 16px;
+	font-size: 16px;
+}
 
 /*** logo ****/
 .logo {
-	background-image: url(@theme_image_path@/cardiodiagnosis/logo-negro.png);
+	background-image: url(@theme_image_path@/cardiodiagnosis/logo.png);
 	background-repeat: no-repeat;
-	background-repeat: no-repeat;
-	background-size: auto;
-	display: inline-block;
-	height: 125px;
-	width: 401px;
+    background-size: 212px auto;
+    display: inline-block;
+    height: 97px;
+    position: static;
+    width: 198px;
 }
 
 .dark .logo {
-	background-image:
-		url(@theme_image_path@/cardiodiagnosis/logo-blanco.png);
+	background-image: url(@theme_image_path@/cardiodiagnosis/logo.png);
 }
 
 /*** home ****/
