@@ -1,7 +1,11 @@
 /*** body ****/
 .aui body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;	
 }
+
+.aui .light {
+	background: none repeat scroll 0 0 #FFFFFF;
+} 
 
 .aui a {
 	font-family: 'Raleway', sans-serif;
@@ -9,14 +13,15 @@
 	color: #53585F;
 }
 
-.controls-hidden .portlet-title, .signed-out .portlet-title {
+
+
+.controls-hidden .portlet-title,.signed-out .portlet-title {
 	display: none;
 }
 
-
 /**** navigation ****/
 #navigation {
-	margin-top: 16px;
+	margin-top: 60px;
 	font-size: 16px;
 }
 
@@ -24,11 +29,11 @@
 .logo {
 	background-image: url(@theme_image_path@/cardiodiagnosis/logo.png);
 	background-repeat: no-repeat;
-    background-size: 212px auto;
-    display: inline-block;
-    height: 97px;
-    position: static;
-    width: 198px;
+	background-size: 212px auto;
+	display: inline-block;
+	height: 97px;
+	position: static;
+	width: 198px;
 }
 
 .dark .logo {
@@ -42,4 +47,21 @@
 
 .aui .carousel-home .portlet-borderless-container menu {
 	display: none;
+}
+
+.home-bottom-link {
+	border-radius: 10px;
+	border-style: outset;
+	padding-top: 10px;
+}
+
+.home-bottom-link:hover {
+	border-color: rgba(68, 68, 68, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(68, 68, 68, 0.6);
+    outline: 0 none;
+}
+
+/*** journal articles ***/
+.journal-content-article p {
+	word-break: keep-all; /* prohibit trencar paraules entre dues lletras*/
 }
