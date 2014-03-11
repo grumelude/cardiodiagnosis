@@ -13,6 +13,10 @@
 	color: #53585F;
 }
 
+p {
+	 word-break: normal;
+}
+
 
 
 .controls-hidden .portlet-title,.signed-out .portlet-title {
@@ -21,9 +25,16 @@
 
 /**** navigation ****/
 #navigation {
-	margin-top: 60px;
-	font-size: 16px;
+	margin-top: 0px;;
+	font-size: 15px;
 }
+
+.main-menu {
+	margin-top: 30px;
+}
+	.main-menu .language-selector {
+		float: right;
+	}
 
 /*** logo ****/
 .logo {
@@ -65,3 +76,20 @@
 .journal-content-article p {
 	word-break: keep-all; /* prohibit trencar paraules entre dues lletras*/
 }
+
+/** llistat cursos ***/
+ul.subject-list {
+	display: inline-block;
+}
+
+ul.subject-list li {
+	float: left;
+	height: 2em;
+}
+
+ul.subject-list li a {
+	width: 18em;
+    display: block;
+}
+
+

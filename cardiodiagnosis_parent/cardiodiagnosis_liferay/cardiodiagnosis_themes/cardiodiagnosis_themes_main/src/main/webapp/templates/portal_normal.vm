@@ -29,10 +29,16 @@ $theme.include($body_top_include)
 					</a>
 				</h1>
 			</div>
-			<div class="pull-right span9">
-				#if ($has_navigation || $is_signed_in)
-					#parse ("$full_templates_path/navigation.vm")
-				#end			
+			<div class="pull-right span8 main-menu">
+				<div class="row-fluid" >
+					<div class="language-selector">$theme.language()</div>
+				</div>
+				<div class="row-fluid">
+					#if ($has_navigation || $is_signed_in)
+						#parse ("$full_templates_path/navigation.vm")
+					#end			
+				</div>
+				
 			</div>			
 		</div>
 
