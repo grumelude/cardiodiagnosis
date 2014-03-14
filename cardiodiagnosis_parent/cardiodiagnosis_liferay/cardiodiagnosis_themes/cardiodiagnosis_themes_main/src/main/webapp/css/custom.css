@@ -6,7 +6,7 @@
 @import url(color_schemes/dark.css);
 @import url(color_schemes/light.css);
 @import url(fonts.css);
-@import url(cardiodiagnosis.css);
+
 
 $dockbarGradientEnd: #53585F;
 $dockbarGradientStart: #53585F;

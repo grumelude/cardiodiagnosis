@@ -29,7 +29,7 @@ $theme.include($body_top_include)
 					</a>
 				</h1>
 			</div>
-			<div class="pull-right span8 main-menu">
+			<div class="pull-right span9 main-menu">
 				<div class="row-fluid" >
 					<div class="language-selector">$theme.language()</div>
 				</div>

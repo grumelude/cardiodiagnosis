@@ -10,6 +10,8 @@
 
 #wrapper {
 	padding: 2em 12em 0;
+	max-width: 980px;
+	margin: auto;
 
 	@include respond-to(phone) {
 		padding-left: 0.5em;

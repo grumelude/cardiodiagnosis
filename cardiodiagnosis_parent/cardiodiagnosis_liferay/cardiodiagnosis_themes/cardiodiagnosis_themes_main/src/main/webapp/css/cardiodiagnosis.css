@@ -29,6 +29,10 @@ p {
 	font-size: 15px;
 }
 
+.aui #navigation .nav > li > a {
+	padding: 4px 11px 5px;
+}
+
 .main-menu {
 	margin-top: 30px;
 }
