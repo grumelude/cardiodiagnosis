@@ -9,8 +9,7 @@
 
 .aui a {
 	font-family: 'Raleway', sans-serif;
-	font-weight: inherit;
-	color: #53585F;
+	font-weight: inherit;	
 }
 
 p {
@@ -107,4 +106,28 @@ ul.subject-list li a {
     text-align: right;
 }
 
+/** perfils doctors ***/
+
+
+ul.perfils-doctors > li:nth-child(even) {
+    background-color: #F6F6F6;
+}
+
+ul.perfils-doctors > li {
+	list-style: none;
+}
+
+.perfil-doctor  {
+	padding: 10px;
+}
+
+	.perfil-doctor h3 {
+		margin-top: 0px;
+	}
+
+	.perfil-doctor .imatge-perfil {
+		border: 1px solid #D3D3D3;
+		box-shadow: 0 0 2px #CCCCCC;
+		padding: 3px;
+	}
 
