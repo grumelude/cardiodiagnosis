@@ -21,48 +21,61 @@ $theme.include($body_top_include)
 #dockbar()
 
 <div class="container-fluid" id="wrapper">
-	<header id="banner" role="banner">
-		<div id="heading" class="row-fluid">
-			<div class="pull-left">			
-				<h1 class="site-title ">
-					<a class="logo" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">											
-					</a>
-				</h1>
-			</div>
-			<div class="pull-right span9 main-menu">
-				<div class="row-fluid" >
-					<div class="language-selector">$theme.language()</div>
+	
+	<div id="contenidor-wrapper-header" class="contenidor-wrapper">
+		<div class="contenidor">
+			<header id="banner" role="banner">
+				<div id="heading" class="row-fluid">
+					<div class="pull-left">			
+						<h1 class="site-title ">
+							<a class="logo" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">											
+							</a>
+						</h1>
+					</div>
+					<div class="pull-right span9 main-menu">
+						<div class="row-fluid" >
+							<div class="language-selector">$theme.language()</div>
+						</div>
+						<div class="row-fluid">
+							#if ($has_navigation || $is_signed_in)
+								#parse ("$full_templates_path/navigation.vm")
+							#end			
+						</div>
+						
+					</div>			
 				</div>
-				<div class="row-fluid">
-					#if ($has_navigation || $is_signed_in)
-						#parse ("$full_templates_path/navigation.vm")
-					#end			
-				</div>
-				
-			</div>			
-		</div>
-
 		
-	</header>
-
-	<div id="content">		
-
-		#if ($selectable)
-			$theme.include($content_include)
-		#else
-			$portletDisplay.recycle()
-
-			$portletDisplay.setTitle($the_title)
-
-			$theme.wrapPortlet("portlet.vm", $content_include)
-		#end
+				
+			</header>
+		</div>
 	</div>
 
-	<footer id="footer" role="contentinfo">
-		<p class="powered-by">
-			#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
-		</p>
-	</footer>
+	<div id="contenidor-wrapper-content" class="contenidor-wrapper">
+		<div class="contenidor">
+			<div id="content">		
+		
+				#if ($selectable)
+					$theme.include($content_include)
+				#else
+					$portletDisplay.recycle()
+		
+					$portletDisplay.setTitle($the_title)
+		
+					$theme.wrapPortlet("portlet.vm", $content_include)
+				#end
+			</div>
+		</div>
+	</div>
+
+	<div id="contenidor-wrapper-footer" class="contenidor-wrapper">
+		<div class="contenidor">
+			<footer id="footer" role="contentinfo">
+				<p class="powered-by">
+					#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
+				</p>
+			</footer>
+		</div>
+	</div>
 </div>
 
 $theme.include($body_bottom_include)
