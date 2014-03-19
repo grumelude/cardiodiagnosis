@@ -1,0 +1,82 @@
+{"facets": [
+    {
+        "displayStyle": "asset_tags",
+        "static": true,
+        "weight": 1.5,
+        "order": "OrderHitsDesc",
+        "data": {
+            "displayStyle": "list",
+            "maxTerms": 10,
+            "values": ["article"],
+            "frequencyThreshold": 1,
+            "showAssetCount": true
+        },
+        "className": "com.liferay.portal.kernel.search.facet.MultiValueFacet",
+        "label": "tag",
+        "fieldName": "assetTagNames"
+    },
+    {
+        "displayStyle": "asset_tags",
+        "static": false,
+        "weight": 1.3,
+        "order": "OrderHitsDesc",
+        "data": {
+            "displayStyle": "list",
+            "maxTerms": 10,
+            "frequencyThreshold": 1,
+            "showAssetCount": true
+        },
+        "className": "com.liferay.portal.kernel.search.facet.MultiValueFacet",
+        "label": "category",
+        "fieldName": "assetCategoryTitles"
+    },
+    {
+        "displayStyle": "asset_tags",
+        "static": false,
+        "weight": 1.5,
+        "order": "OrderHitsDesc",
+        "data": {
+            "displayStyle": "list",
+            "maxTerms": 10,
+            "frequencyThreshold": 1,
+            "showAssetCount": true
+        },
+        "className": "com.liferay.portal.kernel.search.facet.MultiValueFacet",
+        "label": "tag",
+        "fieldName": "assetTagNames"
+    },
+    {
+        "displayStyle": "modified",
+        "static": false,
+        "weight": 1,
+        "order": "OrderHitsDesc",
+        "data": {
+            "frequencyThreshold": 0,
+            "ranges": [
+                {
+                    "range": "[past-hour TO *]",
+                    "label": "past-hour"
+                },
+                {
+                    "range": "[past-24-hours TO *]",
+                    "label": "past-24-hours"
+                },
+                {
+                    "range": "[past-week TO *]",
+                    "label": "past-week"
+                },
+                {
+                    "range": "[past-month TO *]",
+                    "label": "past-month"
+                },
+                {
+                    "range": "[past-year TO *]",
+                    "label": "past-year"
+                }
+            ]
+        },
+        "className": "com.liferay.portal.kernel.search.facet.ModifiedFacet",
+        "label": "modified",
+        "fieldName": "modified"
+    }
+]}
