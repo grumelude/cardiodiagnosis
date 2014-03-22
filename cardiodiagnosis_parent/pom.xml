@@ -61,7 +61,7 @@
 		</repository>
 	</repositories>
 	<properties>
-		<liferay.server>${user.home}/liferay/cardiodiagnosis/liferay-portal-6.2.0-ce-ga1</liferay.server>
+		<liferay.server>${user.home}/liferay/cardiodiagnosis/liferay-portal-6.2-ce-ga2</liferay.server>
 		<liferay.auto.deploy.dir>${liferay.server}/deploy</liferay.auto.deploy.dir>
 		<liferay.app.server.deploy.dir>${liferay.server}/tomcat-7.0.42/webapps</liferay.app.server.deploy.dir>
 		<liferay.version>6.2.0-RC5</liferay.version>
