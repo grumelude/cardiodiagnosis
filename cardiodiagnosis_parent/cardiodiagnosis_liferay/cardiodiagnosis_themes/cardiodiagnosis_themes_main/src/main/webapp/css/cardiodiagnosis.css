@@ -103,6 +103,11 @@ ul.subject-list li a {
 
 /*** footer ****/
 
+#contenidor-wrapper-footer {
+    background-color: #555555;
+    color: #FFFFFF;
+}
+
 .aui #footer {
     min-height: 200px;
     text-align: right;
