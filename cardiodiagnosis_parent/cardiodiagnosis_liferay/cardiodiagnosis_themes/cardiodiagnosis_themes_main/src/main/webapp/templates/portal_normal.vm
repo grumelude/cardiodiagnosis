@@ -70,9 +70,25 @@ $theme.include($body_top_include)
 	<div id="contenidor-wrapper-footer" class="contenidor-wrapper">
 		<div class="contenidor">
 			<footer id="footer" role="contentinfo">
-				<p class="powered-by">
-					#language ("by") <a href="http://www.liferay.com" rel="external">Joth</a>
-				</p>
+				<div class="row-fluid"> 
+					<div class="span7">
+					    <ul class="pull-left">
+							<li id="rss-icon"><a target="_blank" href="/blog/-/blogs/rss">RSS feed</a></li>
+							<li id="twitter-icon"><a target="_blank" href="https://twitter.com/CardioBCN">Twitter</a></li>
+							<li id="contact-icon"><a href="/contacto">Contacto</a></li>
+					    </ul>
+					</div>
+					<div class="span5">
+					    <p>© 2005 – $dateTool.format('yyyy', $dateTool.getDate()) Cardiodiagnosis</p>
+					</div>
+				    </div>
+				    <div class="row-fluid"> 
+					<p class="powered-by">
+					   #language ("by") <a href="#" rel="external">Joth</a>
+				        </p>
+				    </div>
+
+				
 			</footer>
 		</div>
 	</div>

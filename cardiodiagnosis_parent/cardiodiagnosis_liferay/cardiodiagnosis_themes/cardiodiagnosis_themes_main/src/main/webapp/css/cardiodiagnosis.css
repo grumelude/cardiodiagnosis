@@ -1,22 +1,20 @@
 /*** body ****/
 .aui body {
-	font-family: 'Raleway', sans-serif;	
+	font-family: 'Raleway', sans-serif;
 }
 
 .aui .light {
 	background: none repeat scroll 0 0 #FFFFFF;
-} 
+}
 
 .aui a {
 	font-family: 'Raleway', sans-serif;
-	font-weight: inherit;	
+	font-weight: inherit;
 }
 
 p {
-	 word-break: normal;
+	word-break: normal;
 }
-
-
 
 .controls-hidden .portlet-title,.signed-out .portlet-title {
 	display: none;
@@ -28,20 +26,20 @@ p {
 	font-size: 15px;
 }
 
-.aui #navigation .nav > li > a {
+.aui #navigation .nav>li>a {
 	padding: 4px 11px 5px;
 }
 
 /* #navigation div div > ul > li:last-child > a { */
 /*      font-size: 12px; */
 /* } */
-
 .main-menu {
 	margin-top: 30px;
 }
-	.main-menu .language-selector {
-		float: right;
-	}
+
+.main-menu .language-selector {
+	float: right;
+}
 
 /*** logo ****/
 .logo {
@@ -68,7 +66,7 @@ p {
 }
 
 .home-bottom-link {
-	border-radius: 10px;	
+	border-radius: 10px;
 	padding-top: 10px;
 	background-color: #F6F6F6;
 	padding: 10px;
@@ -76,9 +74,10 @@ p {
 
 .home-bottom-link:hover {
 	border-color: rgba(68, 68, 68, 0.8);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(68, 68, 68, 0.6);
-    outline: 0 none;
-    cursor: pointer;    
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px
+		rgba(68, 68, 68, 0.6);
+	outline: 0 none;
+	cursor: pointer;
 }
 
 /*** journal articles ***/
@@ -98,76 +97,107 @@ ul.subject-list li {
 
 ul.subject-list li a {
 	width: 18em;
-    display: block;
+	display: block;
 }
 
 /*** footer ****/
-
 #contenidor-wrapper-footer {
-    background-color: #555555;
-    color: #FFFFFF;
+	background-color: #555555;
+	color: #FFFFFF;
 }
 
 .aui #footer {
-    min-height: 200px;
-    text-align: right;
+	min-height: 200px;
+	text-align: right;
+	padding-top: 20px;
 }
 
-/** perfils doctors ***/
-
-
-ul.perfils-doctors > li:nth-child(even) {
-    background-color: #F6F6F6;
-}
-
-ul.perfils-doctors > li {
+.aui #footer ul {
 	list-style: none;
 }
 
-.perfil-doctor  {
+.aui #footer ul li {
+	text-align: left;
+	display: inline-block;
+	margin-right: 10px;
+	background-position: 1px center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    padding-left: 25px;
+} 
+
+.aui #footer ul li#rss-icon {
+	background-image: url(@theme_image_path@/cardiodiagnosis/rss_icon.png);
+	background-repeat: no-repeat;	
+}
+
+.aui #footer ul li#twitter-icon {
+	background-image: url(@theme_image_path@/cardiodiagnosis/twitter.png);
+	background-repeat: no-repeat;
+}
+
+.aui #footer ul li#contact-icon {
+	background-image: url(@theme_image_path@/cardiodiagnosis/contact.png);
+	background-repeat: no-repeat;
+}
+
+.aui #footer ul li a {	
+	color: white;
+}
+
+/** perfils doctors ***/
+ul.perfils-doctors>li:nth-child(even) {
+	background-color: #F6F6F6;
+}
+
+ul.perfils-doctors>li {
+	list-style: none;
+}
+
+.perfil-doctor {
 	padding: 10px;
 }
 
-	.perfil-doctor h3 {
-		margin-top: 0px;
-	}
+.perfil-doctor h3 {
+	margin-top: 0px;
+}
 
-	.perfil-doctor .imatge-perfil {
-		border: 1px solid #D3D3D3;
-		box-shadow: 0 0 2px #CCCCCC;
-		padding: 3px;
-	}
+.perfil-doctor .imatge-perfil {
+	border: 1px solid #D3D3D3;
+	box-shadow: 0 0 2px #CCCCCC;
+	padding: 3px;
+}
 
 /** llistat d'articles **/
 ul.llistat-articles {
 	margin-left: 0px;
 }
 
-ul.llistat-articles > li {
+ul.llistat-articles>li {
 	list-style: none;
 }
 
-ul.llistat-articles > li:nth-child(even) {
-    background-color: #F6F6F6;
+ul.llistat-articles>li:nth-child(even) {
+	background-color: #F6F6F6;
 }
 
-ul.llistat-articles .article  {
+ul.llistat-articles .article {
 	padding: 10px;
 }
 
-	.article h4 {
-		margin-top: 0px;
-	}
-	
-	.article .info {
-		max-height: 110px;
-    	overflow: hidden;
-	}
+.article h4 {
+	margin-top: 0px;
+}
 
-	.article img {
-		border: 1px solid #D3D3D3;
-		box-shadow: 0 0 2px #CCCCCC;
-		padding: 3px;
-		width: 100px;
-		height: 100px;
-	}
+.article .info {
+	max-height: 110px;
+	overflow: hidden;
+}
+
+.article img {
+	border: 1px solid #D3D3D3;
+	box-shadow: 0 0 2px #CCCCCC;
+	padding: 3px;
+	width: 100px;
+	height: 100px;
+}
