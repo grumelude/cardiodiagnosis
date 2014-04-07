@@ -20,6 +20,10 @@ p {
 	display: none;
 }
 
+.aui body #wrapper {
+	padding-top: 0px;
+} 
+
 /**** navigation ****/
 #navigation {
 	margin-top: 0px;;
