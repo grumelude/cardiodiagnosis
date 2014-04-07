@@ -30,15 +30,19 @@ p {
 	padding: 4px 11px 5px;
 }
 
-/* #navigation div div > ul > li:last-child > a { */
-/*      font-size: 12px; */
-/* } */
+.aui #navigation .navbar-inner {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
 .main-menu {
 	margin-top: 30px;
 }
 
-.main-menu .language-selector {
-	float: right;
+#wrapper .language-selector {
+	float: right;	
 }
 
 /*** logo ****/
@@ -54,6 +58,31 @@ p {
 
 .dark .logo {
 	background-image: url(@theme_image_path@/cardiodiagnosis/logo.png);
+}
+
+/**** dockbar *****/
+
+.aui .dockbar-split .dockbar .navbar-inner .nav > li.sign-in  {
+	background-color: transparent;
+	background-image: none;
+}
+
+.aui .dockbar-split .dockbar .navbar-inner .nav > li.sign-in > a {
+	color: #53585F;	
+}
+
+.aui .dockbar-split .dockbar .navbar-inner .nav > li > a {
+	font-size: smaller;
+	line-height: 10px;
+}
+
+.aui .dockbar-split.signed-in .dockbar .navbar-inner .nav-account-controls  {
+	left: 40%;
+	right: auto;
+}
+
+.aui .dockbar-split.signed-in .dockbar .navbar-inner .user-avatar  img.user-avatar-image {
+	width: 14px;
 }
 
 /*** home ****/
