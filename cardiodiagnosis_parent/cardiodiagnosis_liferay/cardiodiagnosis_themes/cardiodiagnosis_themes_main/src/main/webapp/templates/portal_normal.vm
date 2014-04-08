@@ -25,7 +25,7 @@ $theme.include($body_top_include)
 	<div id="contenidor-wrapper-header" class="contenidor-wrapper">		
 		<div class="contenidor">
 			<div class="row-fluid" >
-				<div class="language-selector pull-right">$theme.language(null, null, null, 1)</div>
+				<div class="language-selector pull-right">$theme.language("fm", null, "_82_languageId", 1)</div>
 			</div>
 			<header id="banner" role="banner">
 				<div id="heading" class="row-fluid">
