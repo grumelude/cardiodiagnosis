@@ -105,6 +105,10 @@ p {
 	padding: 10px;
 }
 
+#column-2 .home-bottom-link, #column-3 .home-bottom-link, #column-4 .home-bottom-link {	
+	height: 410px;
+}
+
 .home-bottom-link:hover {
 	border-color: rgba(68, 68, 68, 0.8);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px
