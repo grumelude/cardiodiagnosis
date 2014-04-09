@@ -28,25 +28,15 @@ $theme.include($body_top_include)
 				<div class="language-selector pull-right">$theme.language("fm", null, "_82_languageId", 1)</div>
 			</div>
 			<header id="banner" role="banner">
-				<div id="heading" class="row-fluid">
-					<div class="pull-left">			
-						<h1 class="site-title ">
-							<a class="logo" href="/home" title="#language_format ("go-to-x", [$site_name])">											
-							</a>
-						</h1>
-					</div>
-					<div class="pull-right span9 main-menu">
-						
-						<div class="row-fluid">
-							#if ($has_navigation || $is_signed_in)
-								#parse ("$full_templates_path/navigation.vm")
-							#end			
-						</div>
-						
-					</div>			
-				</div>
-		
-				
+				<div class="row-fluid" >	
+					<a class="logo span3" href="/home" title="#language_format ("go-to-x",[$site_name])"></a>
+							
+						<div class="span9 main-menu">			
+								#if ($has_navigation || $is_signed_in)
+									#parse ("$full_templates_path/navigation.vm")
+								#end
+						</div>	
+	            </div>						
 			</header>
 		</div>
 	</div>
