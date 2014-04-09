@@ -88,6 +88,11 @@ p {
 	right: auto;
 }
 
+.aui .dockbar-split .dockbar .navbar-inner .nav-account-controls  {
+	left: 5%;
+	right: auto;
+}
+
 .aui .dockbar-split.signed-in .dockbar .navbar-inner .user-avatar  img.user-avatar-image {
 	width: 14px;
 }
