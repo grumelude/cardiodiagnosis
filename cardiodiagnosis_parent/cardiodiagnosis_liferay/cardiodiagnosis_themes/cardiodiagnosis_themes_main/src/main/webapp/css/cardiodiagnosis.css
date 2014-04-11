@@ -30,8 +30,12 @@ p {
 	font-size: 15px;
 }
 
+.aui #navigation .nav>li {
+	margin: 0px;
+}
+
 .aui #navigation .nav>li>a {
-	padding: 4px 11px 5px;
+	padding: 4px 8px 5px;
 }
 
 .aui #navigation .navbar-inner {
@@ -39,7 +43,6 @@ p {
     border-style: solid;
     border-width: 1px;
 }
-
 
 .main-menu {
 	margin-top: 30px;
@@ -85,6 +88,11 @@ p {
 	right: auto;
 }
 
+.aui .dockbar-split .dockbar .navbar-inner ul.nav-account-controls  {
+	left: 5%;
+	right: auto;
+}
+
 .aui .dockbar-split.signed-in .dockbar .navbar-inner .user-avatar  img.user-avatar-image {
 	width: 14px;
 }
@@ -103,6 +111,11 @@ p {
 	padding-top: 10px;
 	background-color: #F6F6F6;
 	padding: 10px;
+	
+}
+
+#column-2 .home-bottom-link, #column-3 .home-bottom-link, #column-4 .home-bottom-link {
+	height: 410px;
 }
 
 #column-2 .home-bottom-link, #column-3 .home-bottom-link, #column-4 .home-bottom-link {	
@@ -199,10 +212,8 @@ ul.perfils-doctors>li {
 	margin-top: 0px;
 }
 
-.perfil-doctor .imatge-perfil {
-	border: 1px solid #D3D3D3;
-	box-shadow: 0 0 2px #CCCCCC;
-	padding: 3px;
+.perfil-doctor .imatge-perfil img {
+	max-width: 150px;
 }
 
 /** llistat d'articles **/
