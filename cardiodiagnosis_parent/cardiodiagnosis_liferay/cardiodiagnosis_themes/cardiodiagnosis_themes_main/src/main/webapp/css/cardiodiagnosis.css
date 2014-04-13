@@ -89,8 +89,8 @@ p {
 }
 
 .aui .dockbar-split .dockbar .navbar-inner ul.nav-account-controls  {
-	left: 5%;
-	right: auto;
+	left: 5% !important;
+	right: auto !important;
 }
 
 .aui .dockbar-split.signed-in .dockbar .navbar-inner .user-avatar  img.user-avatar-image {
