@@ -52,6 +52,10 @@ p {
 	float: right;	
 }
 
+.aui .navbar b.icon-caret-down {
+	margin-left: 0px;
+}
+
 /*** logo ****/
 .logo {
 	background-image: url(@theme_image_path@/cardiodiagnosis/logo.png);
@@ -115,6 +119,10 @@ p {
 }
 
 #column-2 .home-bottom-link, #column-3 .home-bottom-link, #column-4 .home-bottom-link {
+	height: 410px;
+}
+
+#column-2 .home-bottom-link, #column-3 .home-bottom-link, #column-4 .home-bottom-link {	
 	height: 410px;
 }
 
