@@ -12,6 +12,13 @@
 	font-weight: inherit;
 }
 
+.aui * {
+    text-align: left;
+    word-break: normal;
+    word-spacing: 0;
+    word-wrap: normal;
+}
+
 p {
 	word-break: normal;
 }
@@ -208,6 +215,10 @@ ul.perfils-doctors>li {
 	list-style: none;
 }
 
+ul.perfils-doctors li {
+	line-height: 20px;
+}
+
 .perfil-doctor {
 	padding: 10px;
 }
@@ -244,6 +255,11 @@ ul.llistat-articles .article {
 .article .info {
 	max-height: 110px;
 	overflow: hidden;
+	line-height: 20px;
+}
+
+.article .info .date {
+	font-weight: bold;
 }
 
 .article img {
