@@ -31,6 +31,15 @@ p {
 	padding-top: 0px;
 } 
 
+.aui body #wrapper #contenidor-wrapper-header {
+	background-color: #E0E0E0;
+	padding-bottom: 10px;
+}
+
+.aui body #wrapper #contenidor-wrapper-content {	
+	padding-top: 10px;
+} 
+
 /**** navigation ****/
 #navigation {
 	margin-top: 0px;;
