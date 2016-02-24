@@ -1,0 +1,511 @@
+/*** font families ***/
+.font-text {
+	font-family: 'Raleway';
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	font-weight: normal;
+}
+
+.font-text-bold {
+	@extend .font-text;
+	font-weight: bold;
+}
+
+.font-text-a {
+	color: #00aaff;
+}
+
+.font-highlight {
+	font-family: 'Raleway';
+	font-size: 24px;
+	line-height: 28px;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.font-highlight-small {
+	@extend .font-highlight;
+	font-size: 15px;
+	line-height: 19px;	
+}
+
+/*** layout ***/
+#wrapper.container-fluid {
+	
+	padding: 0;
+	
+	#contenidor-wrapper-header {
+		.contenidor {
+			width: 970px;
+			margin: auto;
+		}
+	}
+	
+	#contenidor-wrapper-content {
+		width: 970px;
+		margin: auto;
+	}
+	
+}
+	
+
+/*** body ****/
+.aui body {
+	@extend .font-text;
+	
+	header {
+		width: 970px;
+		margin: auto;
+	}
+}
+
+.aui .light {
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+
+.aui a {
+	@extend .font-text-a;
+	font-weight: inherit;
+}
+
+.aui * {
+    text-align: left;
+    word-break: normal;
+    word-spacing: 0;
+    word-wrap: normal;
+}
+
+p {
+	word-break: normal;
+}
+
+.controls-hidden .portlet-title,.signed-out .portlet-title {
+	display: none;
+}
+
+.aui body #wrapper {
+	padding-top: 0px;
+} 
+
+.aui body #wrapper #contenidor-wrapper-header {
+/* 	background-color: #E0E0E0; */
+	padding-bottom: 10px;
+}
+
+.aui body #wrapper #contenidor-wrapper-content {	
+	padding-top: 10px;
+} 
+
+
+/**** navigation ****/
+$logo-height: 95px;
+$menu-bar-height: 40px;
+
+.main-menu {
+
+	height: $logo-height;
+}
+
+
+/*** language selector ****/
+.language-selector {
+	text-transform: lowercase;
+	float: right;	
+}
+
+/*** logo ****/
+.logo {
+	height: $logo-height;
+	width: 198px;
+	float: left;
+}
+
+
+/**** dockbar *****/
+
+.aui .dockbar-split .dockbar .navbar-inner .nav > li.sign-in  {
+	background-color: transparent;
+	background-image: none;
+}
+
+.aui .dockbar-split .dockbar .navbar-inner .nav > li.sign-in > a {
+	color: #53585F;	
+}
+
+.aui .dockbar-split .dockbar .navbar-inner .nav > li > a {
+	font-size: smaller;
+	line-height: 10px;
+}
+
+.aui .dockbar-split.signed-in .dockbar .navbar-inner .nav-account-controls  {
+	left: 40%;
+	right: auto;
+}
+
+.aui .dockbar-split .dockbar .navbar-inner ul.nav-account-controls  {
+	left: 5% !important;
+	right: auto !important;
+}
+
+.aui .dockbar-split.signed-in .dockbar .navbar-inner .user-avatar  img.user-avatar-image {
+	width: 14px;
+}
+
+/*** home ****/
+.cardiodiagnosis-1-3-1 {
+	
+	.portlet-layout.row-fluid {
+		margin-bottom: 13px;
+	}
+	
+	.portlet-column {
+		background-color: #F6F6F6;
+	}
+	
+}
+
+.aui .carousel-home .portlet-borderless-container {
+	background: none;
+}
+
+.aui .carousel-home .portlet-borderless-container menu {
+	display: none;
+}
+
+/*** journal articles ***/
+.journal-content-article p {
+	word-break: keep-all; /* prohibit trencar paraules entre dues lletras*/
+}
+
+.picture-title-description {
+	
+	position: relative;
+	padding: 7px;
+	
+	.text-over-picture {
+		@extend .font-text-bold;
+		margin-bottom: 7px;
+		height: 40px;
+		text-align: justify;
+	}
+	
+	.picture-block {
+		position: relative;
+		width: 100%;
+		
+		img.picture {width: 100%;}
+		.title-background {
+			background-color: black; height: 3em; opacity: 0.73; position: absolute; bottom: 0; width: 100%;
+		}
+		
+		.text-on-picture {
+			right: 13px; position: absolute; bottom: 0;
+			@extend .font-highlight;
+		}
+	}
+	
+	.description {
+		padding: 13px 0;
+		text-align: justify;
+	}
+	
+	.link-padding {
+		height: 40px;
+	}
+	
+	.link {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	
+
+	&:hover {
+		border-color: rgba(68, 68, 68, 0.8);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px
+			rgba(68, 68, 68, 0.6);
+		outline: 0 none;
+		cursor: pointer;
+	}
+	
+	/** modes **/
+	&.picture-to-left {
+		.text-over-picture {float: right; width: 68%;}	
+		.picture-block {
+			float: left; width: 30%;
+			.text-on-picture {
+				right: 7px; 
+				@extend .font-highlight-small;
+			}
+		}		
+		.description {float: right;	width: 68%;}
+	}
+	
+	&.picture-to-right {
+		@extend .picture-to-left;
+		.text-over-picture {float: left;}	
+		.picture-block {
+			float: right; width: 30%;
+		}		
+		.description {float: left;}
+	}
+	
+}
+
+/** llistat cursos ***/
+ul.subject-list {
+	display: inline-block;
+}
+
+ul.subject-list li {
+	float: left;
+	height: 2em;
+}
+
+ul.subject-list li a {
+	width: 18em;
+	display: block;
+}
+
+/*** footer ****/
+#contenidor-wrapper-footer {
+	background-color: #555555;
+	color: #FFFFFF;
+}
+
+.aui #footer {
+	min-height: 200px;
+	text-align: right;
+	padding-top: 20px;
+}
+
+.aui #footer ul {
+	list-style: none;
+}
+
+.aui #footer ul li {
+	text-align: left;
+	display: inline-block;
+	margin-right: 10px;
+	background-position: 1px center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    padding-left: 25px;
+} 
+
+.aui #footer ul li#rss-icon {
+	background-image: url(@theme_image_path@/cardiodiagnosis/rss_icon.png);
+	background-repeat: no-repeat;	
+}
+
+.aui #footer ul li#twitter-icon {
+	background-image: url(@theme_image_path@/cardiodiagnosis/twitter.png);
+	background-repeat: no-repeat;
+}
+
+.aui #footer ul li#contact-icon {
+	background-image: url(@theme_image_path@/cardiodiagnosis/contact.png);
+	background-repeat: no-repeat;
+}
+
+.aui #footer ul li a {	
+	color: white;
+}
+
+/** perfils doctors ***/
+ul.perfils-doctors>li:nth-child(even) {
+	background-color: #F6F6F6;
+}
+
+ul.perfils-doctors>li {
+	list-style: none;
+}
+
+ul.perfils-doctors li {
+	line-height: 20px;
+}
+
+.perfil-doctor {
+	padding: 10px;
+}
+
+.perfil-doctor h3 {
+	margin-top: 0px;
+}
+
+.perfil-doctor .imatge-perfil img {
+	max-width: 150px;
+}
+
+/** llistat d'articles **/
+ul.llistat-articles {
+	margin-left: 0px;
+}
+
+ul.llistat-articles>li {
+	list-style: none;
+}
+
+ul.llistat-articles>li:nth-child(even) {
+	background-color: #F6F6F6;
+}
+
+ul.llistat-articles .article {
+	padding: 10px;
+}
+
+.article h4 {
+	margin-top: 0px;
+}
+
+.article .info {
+	max-height: 110px;
+	overflow: hidden;
+	line-height: 20px;
+}
+
+.article .info .date {
+	font-weight: bold;
+}
+
+.article img {
+	border: 1px solid #D3D3D3;
+	box-shadow: 0 0 2px #CCCCCC;
+	padding: 3px;
+	width: 100px;
+	height: 100px;
+}
+
+
+/****** MEDIA QUERIES******/
+@media (min-width: 980px) {
+
+	.main-menu {
+	
+		height: $logo-height;
+		
+		nav#navigation {
+			
+			padding: ($menu-bar-height / 2) 0;
+			
+			font-size: 15px;
+			width: 100%;
+			
+			b.icon-caret-down {
+				margin-left: 0px;
+			}
+	
+			.navbar-inner {
+				height: $menu-bar-height;
+				
+			    ul {
+			    	margin-top: (($menu-bar-height*20)/100);
+			    	li {
+			    		margin: 0px;
+			    		&:fist-child {
+			    			float: left;
+			    		}
+			    		
+			    		a {
+			    			padding: 4px 8px 5px;
+			    		}
+			    		
+			    		&.active a {
+			    			font-weight: bold;
+			    			box-shadow: none;
+			    			background-color: transparent;
+			    		}
+			    	}
+			    }
+			}
+		}
+	}
+	
+	
+	.picture-title-description {
+		.cardiodiagnosis-1-3-1 .row-2 & {
+			height: 400px;
+			.text-on-picture {
+				right: 7px; 
+				@extend .font-highlight-small;
+			}
+			
+		}
+		
+		.cardiodiagnosis-1-3-1 .row-3 & {
+			height: 205px;
+			.text-over-picture {float: right; width: 68%;}	
+			.picture-block {
+				float: left; width: 30%;
+				.text-on-picture {
+					right: 7px; 
+					@extend .font-highlight-small;
+				}
+			}		
+			.description {float: right;	width: 68%;}
+		}
+	}
+}
+
+	
+@media (max-width: 979px) {
+	
+	#wrapper.container-fluid {
+		#contenidor-wrapper-header {
+			.contenidor {
+				width: 100%;
+			}
+		}
+		
+		#contenidor-wrapper-content {
+			width: 100%;
+		}
+	}
+	
+	.cardiodiagnosis-1-3-1 .row-2 {
+		.portlet-journal-content {margin-top: 13px;}
+	}
+	
+	/*** layouts ***/
+	.picture-title-description {
+		.cardiodiagnosis-1-3-1 .row-2 & {			
+			margin-top: 13px;		
+		}		
+		.cardiodiagnosis-1-3-1 .row-3 & {	
+			.text-over-picture {float: right; width: 68%;}	
+			.picture-block {
+				float: left; width: 30%;
+				.text-on-picture {
+					right: 7px; 
+					@extend .font-highlight-small;
+				}
+			}		
+			.description {float: right;	width: 68%;}	
+		}
+	}
+	
+}
+
+@media (max-width: 767px) {
+	
+	/*** layouts ***/
+	.picture-title-description {
+		.cardiodiagnosis-1-3-1 .row-2 & {			
+			height: auto;	
+		}		
+		.cardiodiagnosis-1-3-1 .row-3 & {		
+			height: auto;
+			.text-over-picture {float: none; width: 100%;}	
+			.picture-block {
+				float: none; width: 100%;
+				.text-on-picture {
+					right: 7px; 
+					@extend .font-highlight-small;
+				}
+			}		
+			.description {float: none;	width: 100%;}			
+		}
+	}
+}	
