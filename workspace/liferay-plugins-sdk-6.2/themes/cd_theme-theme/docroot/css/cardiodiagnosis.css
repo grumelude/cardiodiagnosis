@@ -25,6 +25,10 @@
 	text-transform: uppercase;
 }
 
+.italic {
+	font-style: italic;
+}
+
 .font-highlight-small {
 	@extend .font-highlight;
 	font-size: 15px;
@@ -186,6 +190,16 @@ $menu-bar-height: 40px;
 	word-break: keep-all; /* prohibit trencar paraules entre dues lletras*/
 }
 
+/************/
+/* ARTICLES */
+/************/
+
+.cardiodiagnosis-article {
+	img { margin: 0 7px 7px 0; }
+	video {	margin: 0 7px 7px 0; }
+	audio { margin: 0 7px 7px 0; }
+}
+
 .picture-title-description {
 	
 	position: relative;
@@ -209,6 +223,7 @@ $menu-bar-height: 40px;
 		
 		.text-on-picture {
 			right: 13px; position: absolute; bottom: 0;
+			text-align: right;
 			@extend .font-highlight;
 		}
 	}
@@ -283,7 +298,7 @@ ul.subject-list li a {
 .aui #footer {
 	min-height: 200px;
 	text-align: right;
-	padding-top: 20px;
+	padding: 13px;
 }
 
 .aui #footer ul {
@@ -434,7 +449,8 @@ ul.llistat-articles .article {
 			height: 400px;
 			.text-on-picture {
 				right: 7px; 
-				@extend .font-highlight-small;
+				font-size: 15px;
+				line-height: 15px;
 			}
 			
 		}
@@ -446,7 +462,8 @@ ul.llistat-articles .article {
 				float: left; width: 30%;
 				.text-on-picture {
 					right: 7px; 
-					@extend .font-highlight-small;
+					font-size: 15px;
+					line-height: 15px;
 				}
 			}		
 			.description {float: right;	width: 68%;}
@@ -456,6 +473,13 @@ ul.llistat-articles .article {
 
 	
 @media (max-width: 979px) {
+	
+	.aui nav.site-navigation#navigation {
+
+		ul.nav {
+			float: left;
+		}
+	}
 	
 	#wrapper.container-fluid {
 		#contenidor-wrapper-header {
@@ -475,6 +499,17 @@ ul.llistat-articles .article {
 	
 	/*** layouts ***/
 	.picture-title-description {
+	
+		.picture-block {
+			float: none; width: 100%;
+			.title-background { height: 40px;}
+			.text-on-picture {
+				right: 7px; 
+				font-size: 15px;
+				line-height: 15px;
+			}
+		}
+		
 		.cardiodiagnosis-1-3-1 .row-2 & {			
 			margin-top: 13px;		
 		}		
@@ -484,7 +519,8 @@ ul.llistat-articles .article {
 				float: left; width: 30%;
 				.text-on-picture {
 					right: 7px; 
-					@extend .font-highlight-small;
+					font-size: 15px;
+					line-height: 15px;
 				}
 			}		
 			.description {float: right;	width: 68%;}	
@@ -495,22 +531,32 @@ ul.llistat-articles .article {
 
 @media (max-width: 767px) {
 	
+	.cardiodiagnosis-article {
+		img { margin: 0 7px 7px 0; width: 100% !important;}
+		video {	margin: 0 7px 7px 0; width: 100% !important; }
+		audio { margin: 0 7px 7px 0; width: 100% !important; }
+	}
+	
 	/*** layouts ***/
 	.picture-title-description {
+		.picture-block {
+			float: none; width: 100%;
+			.title-background { height: 40px;}
+			.text-on-picture {
+				right: 7px; 
+				font-size: 15px;
+				line-height: 15px;
+			}
+		}
 		.cardiodiagnosis-1-3-1 .row-2 & {			
 			height: auto;	
 		}		
 		.cardiodiagnosis-1-3-1 .row-3 & {		
 			height: auto;
+			.picture-block { width: 100%; margin-bottom: 13px;}
 			.text-over-picture {float: none; width: 100%;}	
-			.picture-block {
-				float: none; width: 100%;
-				.text-on-picture {
-					right: 7px; 
-					@extend .font-highlight-small;
-				}
-			}		
-			.description {float: none;	width: 100%;}			
+			.description {float: none;	width: 100%; }			
 		}
+		
 	}
 }	
