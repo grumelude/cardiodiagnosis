@@ -20,6 +20,9 @@
   font-weight: bold;
   text-transform: uppercase; }
 
+.italic {
+  font-style: italic; }
+
 .font-highlight-small, .picture-title-description.picture-to-left .picture-block .text-on-picture, .picture-title-description.picture-to-right .picture-block .text-on-picture {
   font-size: 15px;
   line-height: 19px; }
@@ -160,7 +163,8 @@ p {
     .picture-title-description .picture-block .text-on-picture {
       right: 13px;
       position: absolute;
-      bottom: 0; }
+      bottom: 0;
+      text-align: right; }
   .picture-title-description .description {
     padding: 13px 0;
     text-align: justify; }
@@ -211,7 +215,7 @@ ul.subject-list li a {
 .aui #footer {
   min-height: 200px;
   text-align: right;
-  padding-top: 20px; }
+  padding: 13px; }
 
 .aui #footer ul {
   list-style: none; }
@@ -285,10 +289,7 @@ ul.llistat-articles .article {
 
 .article img {
   border: 1px solid #D3D3D3;
-  box-shadow: 0 0 2px #CCCCCC;
-  padding: 3px;
-  width: 100px;
-  height: 100px; }
+  padding: 3px; }
 
 /****** MEDIA QUERIES******/
 @media (min-width: 980px) {
@@ -318,7 +319,9 @@ ul.llistat-articles .article {
   .cardiodiagnosis-1-3-1 .row-2 .picture-title-description {
     height: 400px; }
     .cardiodiagnosis-1-3-1 .row-2 .picture-title-description .text-on-picture {
-      right: 7px; }
+      right: 7px;
+      font-size: 15px;
+      line-height: 15px; }
   .cardiodiagnosis-1-3-1 .row-3 .picture-title-description {
     height: 205px; }
     .cardiodiagnosis-1-3-1 .row-3 .picture-title-description .text-over-picture {
@@ -328,11 +331,16 @@ ul.llistat-articles .article {
       float: left;
       width: 30%; }
       .cardiodiagnosis-1-3-1 .row-3 .picture-title-description .picture-block .text-on-picture {
-        right: 7px; }
+        right: 7px;
+        font-size: 15px;
+        line-height: 15px; }
     .cardiodiagnosis-1-3-1 .row-3 .picture-title-description .description {
       float: right;
       width: 68%; } }
 @media (max-width: 979px) {
+  .aui nav.site-navigation#navigation ul.nav {
+    float: left; }
+
   #wrapper.container-fluid #contenidor-wrapper-header .contenidor {
     width: 100%; }
   #wrapper.container-fluid #contenidor-wrapper-content {
@@ -342,6 +350,15 @@ ul.llistat-articles .article {
     margin-top: 13px; }
 
   /*** layouts ***/
+  .picture-title-description .picture-block {
+    float: none;
+    width: 100%; }
+    .picture-title-description .picture-block .title-background {
+      height: 40px; }
+    .picture-title-description .picture-block .text-on-picture {
+      right: 7px;
+      font-size: 15px;
+      line-height: 15px; }
   .cardiodiagnosis-1-3-1 .row-2 .picture-title-description {
     margin-top: 13px; }
   .cardiodiagnosis-1-3-1 .row-3 .picture-title-description .text-over-picture {
@@ -351,14 +368,13 @@ ul.llistat-articles .article {
     float: left;
     width: 30%; }
     .cardiodiagnosis-1-3-1 .row-3 .picture-title-description .picture-block .text-on-picture {
-      right: 7px; }
+      right: 7px;
+      font-size: 15px;
+      line-height: 15px; }
   .cardiodiagnosis-1-3-1 .row-3 .picture-title-description .description {
     float: right;
     width: 68%; } }
 @media (max-width: 767px) {
-  /************/
-  /* ARTICLES */
-  /************/
   .cardiodiagnosis-article img {
     margin: 0 7px 7px 0;
     width: 100% !important; }
@@ -370,24 +386,26 @@ ul.llistat-articles .article {
     width: 100% !important; }
 
   /*** layouts ***/
+  .picture-title-description .picture-block {
+    float: none;
+    width: 100%; }
+    .picture-title-description .picture-block .title-background {
+      height: 40px; }
+    .picture-title-description .picture-block .text-on-picture {
+      right: 7px;
+      font-size: 15px;
+      line-height: 15px; }
   .cardiodiagnosis-1-3-1 .row-2 .picture-title-description {
     height: auto; }
   .cardiodiagnosis-1-3-1 .row-3 .picture-title-description {
     height: auto; }
+    .cardiodiagnosis-1-3-1 .row-3 .picture-title-description .picture-block {
+      width: 100%;
+      margin-bottom: 13px; }
     .cardiodiagnosis-1-3-1 .row-3 .picture-title-description .text-over-picture {
       float: none;
       width: 100%; }
-    .cardiodiagnosis-1-3-1 .row-3 .picture-title-description .picture-block {
-      float: none;
-      width: 100%; }
-      .cardiodiagnosis-1-3-1 .row-3 .picture-title-description .picture-block .text-on-picture {
-        right: 7px; }
     .cardiodiagnosis-1-3-1 .row-3 .picture-title-description .description {
       float: none;
-      width: 100%; }
-  .picture-title-description .picture-block {
-    float: none;
-    width: 100%; }
-    .picture-title-description .picture-block .text-on-picture {
-      right: 7px; } }
+      width: 100%; } }
 
