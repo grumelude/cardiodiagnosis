@@ -42,13 +42,13 @@
 	
 	#contenidor-wrapper-header {
 		.contenidor {
-			width: 970px;
+			width: 1280px;
 			margin: auto;
 		}
 	}
 	
 	#contenidor-wrapper-content {
-		width: 970px;
+		width: 1280px;
 		margin: auto;
 	}
 	
@@ -60,7 +60,7 @@
 	@extend .font-text;
 	
 	header {
-		width: 970px;
+		width: 1280px;
 		margin: auto;
 	}
 }
