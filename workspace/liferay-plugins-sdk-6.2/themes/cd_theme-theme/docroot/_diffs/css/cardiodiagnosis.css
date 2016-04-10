@@ -41,10 +41,8 @@
 	padding: 0;
 	
 	#contenidor-wrapper-header {
-		.contenidor {
-			width: 1280px;
-			margin: auto;
-		}
+		width: 1280px;
+		margin: auto;
 	}
 	
 	#contenidor-wrapper-content {
@@ -60,7 +58,7 @@
 	@extend .font-text;
 	
 	header {
-		width: 1280px;
+		width: 100%;
 		margin: auto;
 	}
 }
@@ -241,6 +239,7 @@ $menu-bar-height: 40px;
 		position: absolute;
 		bottom: 0;
 		right: 0;
+		padding: 0 7px;
 	}
 	
 
@@ -381,13 +380,13 @@ ul.llistat-articles .article {
 }
 
 .article .info {
-	max-height: 110px;
 	overflow: hidden;
 	line-height: 20px;
 }
 
 .article .info .date {
 	font-weight: bold;
+	font-family: Arial;
 }
 
 .article img {
@@ -472,17 +471,30 @@ ul.llistat-articles .article {
 @media (max-width: 979px) {
 	
 	.aui nav.site-navigation#navigation {
+	
+		&.open .navbar-inner .nav-collapse {
+			width: 100%;
+		}
 
 		ul.nav {
 			float: left;
 		}
 	}
 	
+	.portlet-dockbar {
+		width: 50%;
+		position: absolute;
+		right: 20px;
+	}
+
+	.language-selector {
+	    float: right;
+	    width: 50%;
+	}
+	
 	#wrapper.container-fluid {
 		#contenidor-wrapper-header {
-			.contenidor {
-				width: 100%;
-			}
+			width: 100%;			
 		}
 		
 		#contenidor-wrapper-content {
